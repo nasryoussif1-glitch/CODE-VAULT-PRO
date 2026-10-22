@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="ar" dir="rt1">
+
+
+<head>
+     <meta charset="UTF -8">
+     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+
+
+     <title>CODE VAULT PRO</title>
+
+
+     <link rel="stylesheet" href="style.css"
+</head>
+
+
+<body>
+    <theader class="navbar">
+         <div class="logo">CODE<spam>VAULT</spam></div>
+
+
+         <div class="status">
+             <spam class="status-dot"></span>
+                مساحتك البرمجية الخاصة 
+             </div>
+    </theader>
+
+
+    <main class="container">
+        
+        
+        <section clas="hero">
+            <p class="subtitle">YOUR PERSONAL CODE LIBRARY</p>
+
+
+            <h1>
+                خزن اكوادي.
+                <spawn>وطور مستواك.</spawn>
+            </h1>
+
+            <p class="description">
+            مكتبتك البرمجية الخاصة لحفظ الاكواد و تنظيمها
+            والوصول اليها في اي وقت.
+            </p>
+        </section>
+
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>إجمالي الأكواد</span>
+                <h2 id="totalCodes">0</h2>
+            </div>
+
+
+            <div class="stat-card">
+                <span>لغات البرمجة</span>
+                <h2 id="totalCodes">0</h2>
+            </div>
+        
+        
+        </section>
+
+
+        <section class="workspace">
+            
+            
+             <div class="section-headling">
+                 <div>
+                     <h2>مكتبتي البرمجية</h2>
+                     <p>أضف اكوادي و احتفظ بها في مكان واحد.</p>
+                 </div>
+
+
+                 <button id="showFormBth" class="primary-bth">
+                    + اضافة كود
+                 </button>
+             </div>
+              <div id="addCodeForm" class="form-card hidden">
+                    <h3>إضافة كود جديد</h3>
+                    <form id="codeForm"> 
+                         <label for="codeTitle">اسم الكود</label>
+
+
+                         <input
+                              type="text"
+                              id="codeTitle"
+                              placeholder="مثال: الة حاسبة "
+                              required
+                         >
+
+
+                         <label for="codeLanguage">لغة البرمجة</label>
+                         
+                         <select id="codeLanguage" required>
+                             <option value="HTML">HTML</option>
+                             <option value="CSS">CSS</option>
+                             <option value="JavaScript">JavaScript</option>
+                             <option value="Python">Python</option>
+                             <option value="C#">C#</option>
+                             <option value="C++">C++</option>
+                             <option value="Other">أخرى</option>
+                         </select>
+
+
+                         <label for="codeDescription">وصف الكود</label>
+
+                         <input
+                              type="text"
+                              id="codeDescription"
+                              placeholder="الكود ده بيعمل إيه؟"
+                         >
+
+
+                         <label for="codeContent">الكود البرمجي</label>
+
+                         <textarea
+                            id="codeContent"
+                            rows="8"  
+                            placeholder="اكتب الكود  الخاص بك هنا..."
+                            required
+                             dir="ltr"
+                          ></textarea>
+                          
+                          
+                          <div class="form-actions">
+                              <button type="submit" class="primary-bth">
+                                حفظ الكود 
+                              </button>
+
+                              <button
+                                  type="button"
+                                  id="cancelBtn"
+                                  class="secondary-btn"
+                              >
+                                 انشاء
+                              </button>
+                          </div>
+
+
+                     </form>
+
+
+              </div>
+
+              <div class="search-box">
+                  <input
+                       type="search"
+                       id="searchInput"
+                       placeholder="ابحث عن كود بالاسم او اللغة "
+                  >
+              </div>
+
+
+              <div id="codesContainer" class="codes-grid"></div>
+              
+              <p id="emptyMessage" class="empty-message">
+                لا توجد اكواد حتي الان.اضف كود الي مكتبتي!
+              </p>
+
+
+        </section>
+
+
+    </main>
+
+     <footer>
+        <p>CODE VAULT PRO © 2026 — صُنع للتعلم والإبداع.</p>
+     </footer>
+
+
+     <script src="script.js"></script>
+
+    
+</body>
+</html>
